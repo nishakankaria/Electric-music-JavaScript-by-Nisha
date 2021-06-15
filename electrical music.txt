@@ -1,0 +1,3 @@
+note to frequency map - http://www.phy.mtu.edu/~suits/notefreqs.html
+
+try exmple code- https://live.codecircle.com/

@@ -1,0 +1,24 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+    
+    // This makes your synthesiser cross-browser compatible, so it will work in Chrome or Safari
+    // variable - audio_context will allow us to connect to the audio system on the computer so that we can send sound 
+    var audio_context= window.AudioContext || window.webkitAudioContext;
+    // Now we have to instantiate a sound engine. We need it so we can build our synthesiser.
+    // storing in variable con a new audio_context. that will create a audio engine.
+    var con= new audio_context();
+    // Now create an oscillator.
+    var osc = con.createOscillator();
+    // con.destination is audio output.
+    osc.connect(con.destination);
+   osc.start();
+    
+</script>
+</head>
+<body>
+<h1> hi</h1>
+</body>
+</html>
